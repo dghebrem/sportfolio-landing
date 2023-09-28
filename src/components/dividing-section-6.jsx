@@ -1,6 +1,5 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { motion, useInView } from 'framer-motion';
 
 const DividingSectionStyle = styled.div`
 z-index: 1;
@@ -115,9 +114,9 @@ const DividingSectionSix = () => {
         <DividingSectionStyle>
             <div className="dividing-section__half tan"></div>
             <div className="dividing-section__half white"></div>
-            <img src="https://assets.website-files.com/5837424ae11409586f837994/6119d6836ada862d90f89116_Divider.svg" loading="lazy" data-w-id="d08448c0-14dd-e479-7e03-fa084921f5a6" alt className="divider" />
-            <img src="https://assets.website-files.com/5837424ae11409586f837994/6297ec2ebcb979c203dd1714_60.svg" loading="lazy" data-w-id="d08448c0-14dd-e479-7e03-fa084921f5a7" alt className="image-40 _4" />
-            <img src="https://assets.website-files.com/5837424ae11409586f837994/6297ed366f3e626f630528ee_61.svg" loading="lazy" data-w-id="d08448c0-14dd-e479-7e03-fa084921f5a8" alt className="image-41 _2" />
+            <img src="https://assets.website-files.com/5837424ae11409586f837994/6119d6836ada862d90f89116_Divider.svg" loading="lazy" data-w-id="d08448c0-14dd-e479-7e03-fa084921f5a6" alt="" className="divider" />
+            <img src="https://assets.website-files.com/5837424ae11409586f837994/6297ec2ebcb979c203dd1714_60.svg" loading="lazy" data-w-id="d08448c0-14dd-e479-7e03-fa084921f5a7" alt="" className="image-40 _4" />
+            <img src="https://assets.website-files.com/5837424ae11409586f837994/6297ed366f3e626f630528ee_61.svg" loading="lazy" data-w-id="d08448c0-14dd-e479-7e03-fa084921f5a8" alt="" className="image-41 _2" />
         </DividingSectionStyle>
     );
 }
