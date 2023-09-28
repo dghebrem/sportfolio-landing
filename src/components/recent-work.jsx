@@ -236,7 +236,7 @@ const RecentWork = () => {
                         <h2>Recent work</h2>
                         <p className="sub-para-24">Award winning designs, and nothing less.</p>
                         <div className="button__group recent-work">
-                            <a href="https://www.figma.com/proto/xMf3kagAMyUSNulcEMNUAU/Sample-Work?page-id=0%3A1&amp;node-id=1%3A2&amp;viewport=252%2C48%2C0.25&amp;scaling=min-zoom&amp;starting-point-node-id=1%3A2" target="_blank" className="button hero w-inline-block">
+                            <a href="https://www.figma.com/proto/xMf3kagAMyUSNulcEMNUAU/Sample-Work?page-id=0%3A1&amp;node-id=1%3A2&amp;viewport=252%2C48%2C0.25&amp;scaling=min-zoom&amp;starting-point-node-id=1%3A2" target="_blank" rel="noreferrer" className="button hero w-inline-block">
                                 <div>View recent work</div>
                             </a>
                         </div>
@@ -247,7 +247,7 @@ const RecentWork = () => {
                             src="https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam.jpg" 
                             loading="lazy" srcset="https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam-p-500.jpg 500w, https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam-p-800.jpg 800w, https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam-p-1080.jpg 1080w, https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam-p-1600.jpg 1600w, https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam.jpg 2000w" 
                             sizes="90vw" 
-                            alt
+                            alt=""
                             initial={{ opacity: 0, y: 80 }}
                             animate={{ opacity: inView2 ? 1 : 0, y: inView2 ? 0 : 80 }}
                             transition={{ duration: 0.55 }}
@@ -258,7 +258,7 @@ const RecentWork = () => {
                             loading="lazy" 
                             srcset="https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam-p-500.jpg 500w, https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam-p-800.jpg 800w, https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam-p-1080.jpg 1080w, https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam-p-1600.jpg 1600w, https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam.jpg 2000w" 
                             sizes="90vw" 
-                            alt
+                            alt=""
                             initial={{ opacity: 0, y: 80 }}
                             animate={{ opacity: inView3 ? 1 : 0, y: inView3 ? 0 : 80 }}
                             transition={{ duration: 0.55 }}
@@ -269,7 +269,7 @@ const RecentWork = () => {
                             loading="lazy" 
                             srcset="https://assets.website-files.com/5837424ae11409586f837994/6297f90ce2dea4686ad55630_Kam-p-500.jpeg 500w, https://assets.website-files.com/5837424ae11409586f837994/6297f90ce2dea4686ad55630_Kam-p-800.jpeg 800w, https://assets.website-files.com/5837424ae11409586f837994/6297f90ce2dea4686ad55630_Kam.jpg 1001w" 
                             sizes="(max-width: 1112px) 90vw, 1001px" 
-                            alt
+                            alt=""
                             initial={{ opacity: 0, y: 80 }}
                             animate={{ opacity: inView4 ? 1 : 0, y: inView4 ? 0 : 80 }}
                             transition={{ duration: 0.55 }}
@@ -277,7 +277,7 @@ const RecentWork = () => {
                         <motion.img
                             ref={ref5}
                             src="https://assets.website-files.com/5837424ae11409586f837994/64bea81886bd9a873e0d6cd7_ffKam.jpg" 
-                            alt
+                            alt=""
                             sizes="90vw" 
                             id="w-node-_4669fb84-43d3-407d-351a-333dc453fdb1-1bf5e5de" 
                             loading="lazy" 
@@ -296,10 +296,10 @@ const RecentWork = () => {
                     >
                         <div className="recent-work__logos-title">Designs commonly featured by</div>
                         <div className="recent-work__logos-flex">
-                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba463b27cf60b2c9a7554_dribbble-logo.svg" loading="lazy" alt className="recent-work__logo dribbble" />
-                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba4634c5ff90b59c1abdf_lapa-logo.svg" loading="lazy" alt className="recent-work__logo" />
-                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba46388adf7d226b3bd2e_awwwards-seeklogo.com.svg" loading="lazy" alt className="recent-work__logo awwwards" />
-                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba4639aae7e3a14b5f282_product-hunt-logo-horizontal-black.svg" loading="lazy" alt className="recent-work__logo ph" />
+                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba463b27cf60b2c9a7554_dribbble-logo.svg" loading="lazy" alt="" className="recent-work__logo dribbble" />
+                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba4634c5ff90b59c1abdf_lapa-logo.svg" loading="lazy" alt="" className="recent-work__logo" />
+                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba46388adf7d226b3bd2e_awwwards-seeklogo.com.svg" loading="lazy" alt="" className="recent-work__logo awwwards" />
+                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba4639aae7e3a14b5f282_product-hunt-logo-horizontal-black.svg" loading="lazy" alt="" className="recent-work__logo ph" />
                         </div>
                     </motion.div>
                 </div>

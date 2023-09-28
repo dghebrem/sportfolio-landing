@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
         <NavbarStyle>
             <a href="/" className="logo-width" >
-                <img src="https://assets.website-files.com/5837424ae11409586f837994/614a5001679615173f8c6620_Group%202262.svg" alt loading="lazy" />
+                <img src="https://assets.website-files.com/5837424ae11409586f837994/614a5001679615173f8c6620_Group%202262.svg" alt="" loading="lazy" />
             </a>
         </NavbarStyle>
     );

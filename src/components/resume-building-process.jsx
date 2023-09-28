@@ -296,15 +296,15 @@ const ResumeBuildingProcess = () => {
                     transition={{ duration: 0.55 }}
                 >
                     <div className="quote_wrapper">
-                        <img src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg" alt loading="lazy" className="m-b-30" />
+                        <img src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg" alt="" loading="lazy" className="m-b-30" />
                         <div>Designjoy shows that they know the art of subtlety.</div>
-                        <img src="https://assets.website-files.com/5837424ae11409586f837994/6119d7e989cff23b39d11a86_webflow.svg" alt loading="lazy" className="m-t-30 webflow" />
+                        <img src="https://assets.website-files.com/5837424ae11409586f837994/6119d7e989cff23b39d11a86_webflow.svg" alt="" loading="lazy" className="m-t-30 webflow" />
                     </div>
                     <motion.img 
                         ref={ref4}
                         src="https://assets.website-files.com/5837424ae11409586f837994/6119d9897e15e38d7e0c8bea_52.svg" 
                         loading="lazy" 
-                        alt 
+                        alt="" 
                         className="image-31"
                         initial={{ opacity: 0, x: -80 }}
                         animate={{ opacity: inView4 ? 1 : 0, x: inView4 ? 0 : -80 }}
@@ -314,7 +314,7 @@ const ResumeBuildingProcess = () => {
                         ref={ref5}
                         src="https://assets.website-files.com/5837424ae11409586f837994/6297ebf6a202e770d1a0fd48_420.svg" 
                         loading="lazy"  
-                        alt 
+                        alt="" 
                         className="image-32"
                         initial={{ opacity: 0, x: 80 }}
                         animate={{ opacity: inView5 ? 1 : 0, x: inView5 ? 0 : 80 }}

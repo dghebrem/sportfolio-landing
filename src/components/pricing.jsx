@@ -639,7 +639,7 @@ const Pricing = () => {
                 <div data-w-id="f768d994-700e-86d6-9f81-2b33264c2d49" className="container__800 m-auto hero">
                     <h2 className="pricing-header">Memberships levels</h2>
                     <p className="sub-para-24">Choose a plan that's right for you.</p>
-                    <img src="https://assets.website-files.com/5837424ae11409586f837994/611abc817f5b796fe72d04e4_Group%2028.svg" loading="lazy" alt className="pricing__squiggle" />
+                    <img src="https://assets.website-files.com/5837424ae11409586f837994/611abc817f5b796fe72d04e4_Group%2028.svg" loading="lazy" alt="" className="pricing__squiggle" />
                 </div>
                 <div id="pricinggrid" data-w-id="f768d994-700e-86d6-9f81-2b33264c2d4f" className="w-layout-grid pricing__grid">
                     <div className="pricing__col">
@@ -663,12 +663,12 @@ const Pricing = () => {
                             <div className="most-popular-tag">
                                 <div>MOST&nbsp;POPULAR</div>
                             </div>
-                            <img src="https://assets.website-files.com/5837424ae11409586f837994/611c2385076821ad95ae18bc_45.svg" loading="lazy" alt className="image-67" />
+                            <img src="https://assets.website-files.com/5837424ae11409586f837994/611c2385076821ad95ae18bc_45.svg" loading="lazy" alt="" className="image-67" />
                         </div>
                         <div className="pricing__col-bottom">
                             <div className="pricing__col-bottom-bottom">
                                 <div className="pricing__included">What's included:</div>
-                                <ul role="list" className="pricing__list">
+                                <ul className="pricing__list">
                                     <li className="pricing__li">
                                         <div>One request at a time</div>
                                     </li>
@@ -750,13 +750,13 @@ const Pricing = () => {
                             <img src="https://assets.website-files.com/5837424ae11409586f837994/611abc6c32fdaa097c267b19_dFrame.svg" loading="lazy" alt="" className="pricing__right-col-img" />
                             <div className="pricing__title small">Book a call</div>
                             <div className="pricing__description">Learn more about how DesignJoy works and how it can help you.</div>
-                            <a href="https://calendly.com/designjoy/designjoy-intro-1" target="_blank" className="pricing__text-link">Book a call</a>
+                            <a href="https://calendly.com/designjoy/designjoy-intro-1" target="_blank" rel="noreferrer" className="pricing__text-link">Book a call</a>
                         </div>
                         <div className="pricing__right-col-top bottom">
                             <img src="https://assets.website-files.com/5837424ae11409586f837994/611abc6c5e7a2adf4b36ad2c_ddGroup.svg" loading="lazy" alt="" className="pricing__right-col-img" />
                             <div className="pricing__title small">Refer a friend &amp; earn</div>
                             <div className="pricing__description">Earn 5% monthly recurring commissions for each referral.</div>
-                            <a href="https://designjoy.getrewardful.com/signup" target="_blank" className="pricing__text-link">Join now</a>
+                            <a href="https://designjoy.getrewardful.com/signup" target="_blank" rel="noreferrer" className="pricing__text-link">Join now</a>
                         </div>
                     </div>
                 </div>

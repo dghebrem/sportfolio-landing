@@ -299,20 +299,20 @@ const Footer = () => {
                         </a>
                     </div>
                     <div data-w-id="e21e1f8d-f728-e6e2-065d-4466a59029dd" className="logos">
-                        <img src="https://assets.website-files.com/5837424ae11409586f837994/61424c5418f01be24c52b682_Frame%2051.svg" loading="lazy" alt className="footer__logo lang" />
-                        <img src="https://assets.website-files.com/5837424ae11409586f837994/6165e962d62dea1088533161_Dark%20Logo%20SVG.svg" loading="lazy" alt className="footer__logo soundstripe white" />
-                        <img src="https://assets.website-files.com/5837424ae11409586f837994/620c0b65ac9e342dcd34db83_Nectar-sleep-logo-vector%201.svg" loading="lazy" alt className="footer__logo nectar" />
-                        <img src="https://assets.website-files.com/5837424ae11409586f837994/6203180d8e14605fb2d2c003_Vector.svg" loading="lazy" alt className="footer__logo" />
-                        <img src="https://assets.website-files.com/5837424ae11409586f837994/61424c54ffa9064f6650375b_Group%2015.svg" loading="lazy" alt className="footer__logo soundstripe" />
-                        <img src="https://assets.website-files.com/5837424ae11409586f837994/611b2dc537b655a389aaf3d7_5e1c980f4b6c084724851ee1_cometchat%201%201.svg" loading="lazy" alt className="footer__logo" />
+                        <img src="https://assets.website-files.com/5837424ae11409586f837994/61424c5418f01be24c52b682_Frame%2051.svg" loading="lazy" alt="" className="footer__logo lang" />
+                        <img src="https://assets.website-files.com/5837424ae11409586f837994/6165e962d62dea1088533161_Dark%20Logo%20SVG.svg" loading="lazy" alt="" className="footer__logo soundstripe white" />
+                        <img src="https://assets.website-files.com/5837424ae11409586f837994/620c0b65ac9e342dcd34db83_Nectar-sleep-logo-vector%201.svg" loading="lazy" alt="" className="footer__logo nectar" />
+                        <img src="https://assets.website-files.com/5837424ae11409586f837994/6203180d8e14605fb2d2c003_Vector.svg" loading="lazy" alt="" className="footer__logo" />
+                        <img src="https://assets.website-files.com/5837424ae11409586f837994/61424c54ffa9064f6650375b_Group%2015.svg" loading="lazy" alt="" className="footer__logo soundstripe" />
+                        <img src="https://assets.website-files.com/5837424ae11409586f837994/611b2dc537b655a389aaf3d7_5e1c980f4b6c084724851ee1_cometchat%201%201.svg" loading="lazy" alt="" className="footer__logo" />
                     </div>
                     <div data-w-id="e21e1f8d-f728-e6e2-065d-4466a59029e4" className="bottom">
                         <div className="footer__left-col">
                             <a href="/" aria-current="page" className="footer__bottom-logo w-inline-block w--current">
-                                <img src="https://assets.website-files.com/5837424ae11409586f837994/614a5000615d62efc4f90f5f_Group%202263.svg" loading="lazy" alt />
+                                <img src="https://assets.website-files.com/5837424ae11409586f837994/614a5000615d62efc4f90f5f_Group%202263.svg" loading="lazy" alt="" />
                             </a>
                             <div className="div-block-3">
-                                <img src="https://assets.website-files.com/5837424ae11409586f837994/611d718c63e40202e8a17cd3_Frame.svg" loading="lazy" alt className="az" />
+                                <img src="https://assets.website-files.com/5837424ae11409586f837994/611d718c63e40202e8a17cd3_Frame.svg" loading="lazy" alt="" className="az" />
                                 <div className="footer__head">Designjoy is headquartered in Phoenix, Arizona.</div>
                             </div>
                         </div>
@@ -325,13 +325,13 @@ const Footer = () => {
                             <div>
                                 <a href="https://billing.stripe.com/p/login/14keXT4Qa8wh5k4dQQ" className="footer__link">Client login</a>
                                 <a href="#pricing" className="footer__link">Get started</a>
-                                <a href="https://www.notion.so/brettwill1025/Terms-of-Use-4901d894656448a69c4c4e04d40d3bbc?pvs=4" target="_blank" className="footer__link">Terms &amp; conditions</a>
-                                <a href="https://www.notion.so/brettwill1025/DesignJoy-Privacy-Policy-0011594d80724a68821940237f9f7b02" target="_blank" className="footer__link">Privacy policy</a>
+                                <a href="https://www.notion.so/brettwill1025/Terms-of-Use-4901d894656448a69c4c4e04d40d3bbc?pvs=4" target="_blank" rel="noreferrer" className="footer__link">Terms &amp; conditions</a>
+                                <a href="https://www.notion.so/brettwill1025/DesignJoy-Privacy-Policy-0011594d80724a68821940237f9f7b02" target="_blank" rel="noreferrer" className="footer__link">Privacy policy</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src="https://assets.website-files.com/5837424ae11409586f837994/611b30cc3e9ae0491a0ac358_25.svg" loading="lazy" alt className="image-42" />
+                <img src="https://assets.website-files.com/5837424ae11409586f837994/611b30cc3e9ae0491a0ac358_25.svg" loading="lazy" alt="" className="image-42" />
             </div>
         </FooterStyle>
     );

@@ -289,7 +289,7 @@ const PerksOne = () => {
                         animate={{ opacity: inView2 ? 1 : 0, y: inView2 ? 0 : 80 }}
                         transition={{ duration: 0.55 }}
                     >
-                        <img src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg" loading="lazy" alt className="m-b-30" />
+                        <img src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg" loading="lazy" alt="" className="m-b-30" />
                         <div>Design is everything, and these guys have nailed it.</div>
                         <div className="author-wrapper">
                             <div className="author-avatar"></div>

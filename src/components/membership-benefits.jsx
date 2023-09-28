@@ -262,7 +262,7 @@ const MembershipBenefits = () => {
                             animate={{ opacity: inView1 ? 1 : 0, y: inView1 ? 0 : 80 }}
                             transition={{ duration: 0.55 }}
                         >
-                            <img src="https://assets.website-files.com/5837424ae11409586f837994/611a9e387d080fa68df0f888_Group%2048.svg" loading="lazy" alt class="benefits__icon" />
+                            <img src="https://assets.website-files.com/5837424ae11409586f837994/611a9e387d080fa68df0f888_Group%2048.svg" loading="lazy" alt="" class="benefits__icon" />
                             <h2>Membership benefits</h2>
                             <p class="sub-para-24 max-6700 benefits">Perks so good you'll never need to go anywhere else for your design. Seriously.</p>
                             <div class="button__group">

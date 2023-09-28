@@ -209,7 +209,7 @@ const SportfolioHero = () => {
                     <h1>Unlock a picture perfect resume</h1>
                     <p className="sub-para-24">Coaching portfolio subscriptions to advance your career.</p>
                     <div className="button_group">
-                        <a className="button">
+                        <a className="button" href="#">
                             <div>
                                 See plans
                             </div>
