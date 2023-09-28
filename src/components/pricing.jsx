@@ -717,7 +717,7 @@ const Pricing = () => {
                         <div className="pricing__col-bottom">
                             <div className="pricing__col-bottom-bottom">
                                 <div className="pricing__included">What's included:</div>
-                                <ul role="list" className="pricing__list">
+                                <ul className="pricing__list">
                                     <li className="pricing__li">
                                         <div>
                                             <strong>Two requests at a time</strong>

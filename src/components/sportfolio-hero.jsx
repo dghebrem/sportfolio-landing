@@ -209,7 +209,7 @@ const SportfolioHero = () => {
                     <h1>Unlock a picture perfect resume</h1>
                     <p className="sub-para-24">Coaching portfolio subscriptions to advance your career.</p>
                     <div className="button_group">
-                        <a className="button" href="#">
+                        <a className="button" href="/">
                             <div>
                                 See plans
                             </div>
@@ -217,7 +217,7 @@ const SportfolioHero = () => {
                     </div>
                     <div className="guarantee">
                         <div>Designs you'll</div>
-                        <img src="https://assets.website-files.com/5837424ae11409586f837994/61195da63e9b07d94bbaa046_heart.svg" loading="lazy" alt className="guarantee_heart" />
+                        <img src="https://assets.website-files.com/5837424ae11409586f837994/61195da63e9b07d94bbaa046_heart.svg" loading="lazy" alt="" className="guarantee_heart" />
                         <div>, guaranteed</div>
                     </div>
                 </motion.div>
