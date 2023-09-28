@@ -657,7 +657,7 @@ const Pricing = () => {
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="https://calendly.com/designjoy/designjoy-intro-1" target="_blank" className="book-call-wrapper _2">Book a call</a>
+                                    <a href="https://calendly.com/designjoy/designjoy-intro-1" target="_blank" rel="noreferrer" className="book-call-wrapper _2">Book a call</a>
                                 </div>
                             </div>
                             <div className="most-popular-tag">
@@ -710,7 +710,7 @@ const Pricing = () => {
                                 </div>
                                 <div className="book-call-wrapper"></div>
                                 <div className="div-block-18">
-                                    <a href="https://calendly.com/designjoy/designjoy-intro-1" target="_blank" className="book-call-wrapper _2">Book a call</a>
+                                    <a href="https://calendly.com/designjoy/designjoy-intro-1" target="_blank" rel="noreferrer" className="book-call-wrapper _2">Book a call</a>
                                 </div>
                             </div>
                         </div>
