@@ -74,7 +74,6 @@ const DividingSectionThree = () => {
     const ref2 = useRef(null);
 
     const inView1 = useInView(ref1);
-    const inView2 = useInView(ref2);
     return (
         <DividingSectionStyle>
             <div class="dividing-section__half white"></div>
