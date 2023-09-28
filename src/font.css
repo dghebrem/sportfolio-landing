@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'GrifterBold';
+    src: local('GrifterBold'), url('./fonts/grifterbold.woff') format('woff');
+}
+
+.grifterfont {
+    font-family: 'GrifterBold', sans-serif;
+}
