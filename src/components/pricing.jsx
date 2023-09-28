@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion, useInView } from 'framer-motion';
 
 const PricingStyle = styled.div`
     background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),linear-gradient(#fbe8de,#fbe8de);

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion, useInView } from 'framer-motion';
 
 const FooterStyle = styled.div`
 padding: 150px 5% 100px;
