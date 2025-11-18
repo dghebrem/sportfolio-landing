@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 import { motion, useInView } from 'framer-motion';
 
@@ -129,49 +129,71 @@ img {
     font-weight: 700;
 }
 
-.recent-work__logos-flex {
-    max-width: 600px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+.filter-buttons {
     display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
-.recent-work__logo {
-    width: auto;
-    height: 28px;
-    margin-right: 0.5vw;
+.filter-btn {
+    padding: 12px 24px;
+    border: 2px solid var(--color-gray-300);
+    background: white;
+    color: var(--color-navy);
+    font-family: Grifter, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        border-color: var(--color-gold);
+        color: var(--color-gold);
+    }
+
+    &.active {
+        background: var(--color-gold);
+        border-color: var(--color-gold);
+        color: var(--color-navy);
+    }
 }
 
-.dribbble {
-    height: 24px;
-    margin-right: 0.5vw;
+.portfolio-stats {
+    max-width: 800px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
 }
 
-.awwwards {
-    height: 18px;
-    margin-right: 0.5vw;
+.stat-item {
+    padding: 20px;
 }
 
-.ph {
-    height: 28px;
+.stat-number {
+    font-family: Grifter, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-gold);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: var(--color-gray-600);
+    font-weight: 600;
 }
 
 @media (max-width: 991px) {
-    .recent-work__logos-flex {
-        justify-content: center;
-    }
-
-    .recent-work__logo.awwwards, .recent-work__logo.dribbble {
-        margin-right: 2vw;
-    }
-
-    .recent-work__logo {
-        margin-bottom: 0;
-        margin-right: 2vw;
+    .portfolio-stats {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
 
@@ -183,13 +205,8 @@ img {
         min-width: 0;
     }
 
-    .recent-work__logo.awwwards, .recent-work__logo.dribbble {
-        margin-right: 3vw;
-    }
-
-    .recent-work__logo {
-        margin-bottom: 20px;
-        margin-right: 3vw;
+    .portfolio-stats {
+        margin: 40px auto;
     }
 }
 
@@ -200,14 +217,23 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .recent-work__logo {
-        margin-bottom: 20px;
-        margin-right: 20px;
+    .filter-btn {
+        padding: 10px 18px;
+        font-size: 14px;
     }
 }
 `;
 
+const portfolioItems = [
+    { id: 1, category: 'Football', level: 'College', image: 'https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam.jpg', title: 'Head Football Coach - Division I' },
+    { id: 2, category: 'Basketball', level: 'High School', image: 'https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam.jpg', title: 'Varsity Basketball Coach' },
+    { id: 3, category: 'Baseball', level: 'College', image: 'https://assets.website-files.com/5837424ae11409586f837994/6297f90ce2dea4686ad55630_Kam.jpg', title: 'Assistant Baseball Coach - Division II' },
+    { id: 4, category: 'Track & Field', level: 'High School', image: 'https://assets.website-files.com/5837424ae11409586f837994/64bea81886bd9a873e0d6cd7_ffKam.jpg', title: 'Head Track & Field Coach' },
+];
+
 const RecentWork = () => {
+    const [activeFilter, setActiveFilter] = useState('All');
+
     const ref1 = useRef(null);
     const ref2 = useRef(null);
     const ref3 = useRef(null);
@@ -222,9 +248,13 @@ const RecentWork = () => {
     const inView5 = useInView(ref5);
     const inView6 = useInView(ref6);
 
+    const filteredItems = activeFilter === 'All'
+        ? portfolioItems
+        : portfolioItems.filter(item => item.category === activeFilter || item.level === activeFilter);
+
     return (
         <RecentWorkStyle>
-            <div id="latest" className="section gray">
+            <div id="portfolio" className="section gray">
                 <div className="container">
                     <motion.div
                         ref={ref1}
@@ -233,73 +263,91 @@ const RecentWork = () => {
                         animate={{ opacity: inView1 ? 1 : 0, y: inView1 ? 0 : 80 }}
                         transition={{ duration: 0.55 }}
                     >
-                        <h2>Recent work</h2>
-                        <p className="sub-para-24">Award winning designs, and nothing less.</p>
-                        <div className="button__group recent-work">
-                            <a href="https://www.figma.com/proto/xMf3kagAMyUSNulcEMNUAU/Sample-Work?page-id=0%3A1&amp;node-id=1%3A2&amp;viewport=252%2C48%2C0.25&amp;scaling=min-zoom&amp;starting-point-node-id=1%3A2" target="_blank" rel="noreferrer" className="button hero w-inline-block">
-                                <div>View recent work</div>
-                            </a>
-                        </div>
+                        <h2>Resume Portfolio</h2>
+                        <p className="sub-para-24">Real resumes that helped coaches land their dream positions.</p>
                     </motion.div>
-                    <div className="w-layout-grid latest-projects__grid">
-                        <motion.img 
-                            ref={ref2}
-                            src="https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam.jpg" 
-                            loading="lazy" srcset="https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam-p-500.jpg 500w, https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam-p-800.jpg 800w, https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam-p-1080.jpg 1080w, https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam-p-1600.jpg 1600w, https://assets.website-files.com/5837424ae11409586f837994/64bea7745eabdc84545d0c6e_dfdfdfKam.jpg 2000w" 
-                            sizes="90vw" 
-                            alt=""
-                            initial={{ opacity: 0, y: 80 }}
-                            animate={{ opacity: inView2 ? 1 : 0, y: inView2 ? 0 : 80 }}
-                            transition={{ duration: 0.55 }}
-                        />
-                        <motion.img 
-                            ref={ref3}
-                            src="https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam.jpg" 
-                            loading="lazy" 
-                            srcset="https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam-p-500.jpg 500w, https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam-p-800.jpg 800w, https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam-p-1080.jpg 1080w, https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam-p-1600.jpg 1600w, https://assets.website-files.com/5837424ae11409586f837994/64bea70b83b8a6d5be1c5ab3_dKam.jpg 2000w" 
-                            sizes="90vw" 
-                            alt=""
-                            initial={{ opacity: 0, y: 80 }}
-                            animate={{ opacity: inView3 ? 1 : 0, y: inView3 ? 0 : 80 }}
-                            transition={{ duration: 0.55 }}
-                        />
-                        <motion.img
-                            ref={ref4}
-                            src="https://assets.website-files.com/5837424ae11409586f837994/6297f90ce2dea4686ad55630_Kam.jpg" 
-                            loading="lazy" 
-                            srcset="https://assets.website-files.com/5837424ae11409586f837994/6297f90ce2dea4686ad55630_Kam-p-500.jpeg 500w, https://assets.website-files.com/5837424ae11409586f837994/6297f90ce2dea4686ad55630_Kam-p-800.jpeg 800w, https://assets.website-files.com/5837424ae11409586f837994/6297f90ce2dea4686ad55630_Kam.jpg 1001w" 
-                            sizes="(max-width: 1112px) 90vw, 1001px" 
-                            alt=""
-                            initial={{ opacity: 0, y: 80 }}
-                            animate={{ opacity: inView4 ? 1 : 0, y: inView4 ? 0 : 80 }}
-                            transition={{ duration: 0.55 }}
-                        />
-                        <motion.img
-                            ref={ref5}
-                            src="https://assets.website-files.com/5837424ae11409586f837994/64bea81886bd9a873e0d6cd7_ffKam.jpg" 
-                            alt=""
-                            sizes="90vw" 
-                            id="w-node-_4669fb84-43d3-407d-351a-333dc453fdb1-1bf5e5de" 
-                            loading="lazy" 
-                            srcset="https://assets.website-files.com/5837424ae11409586f837994/64bea81886bd9a873e0d6cd7_ffKam-p-500.jpg 500w, https://assets.website-files.com/5837424ae11409586f837994/64bea81886bd9a873e0d6cd7_ffKam-p-800.jpg 800w, https://assets.website-files.com/5837424ae11409586f837994/64bea81886bd9a873e0d6cd7_ffKam-p-1080.jpg 1080w, https://assets.website-files.com/5837424ae11409586f837994/64bea81886bd9a873e0d6cd7_ffKam-p-1600.jpg 1600w, https://assets.website-files.com/5837424ae11409586f837994/64bea81886bd9a873e0d6cd7_ffKam.jpg 2000w"
-                            initial={{ opacity: 0, y: 80 }}
-                            animate={{ opacity: inView5 ? 1 : 0, y: inView5 ? 0 : 80 }}
-                            transition={{ duration: 0.55 }}
-                        />
+
+                    <div className="filter-buttons">
+                        <button
+                            className={`filter-btn ${activeFilter === 'All' ? 'active' : ''}`}
+                            onClick={() => setActiveFilter('All')}
+                        >
+                            All Sports
+                        </button>
+                        <button
+                            className={`filter-btn ${activeFilter === 'Football' ? 'active' : ''}`}
+                            onClick={() => setActiveFilter('Football')}
+                        >
+                            Football
+                        </button>
+                        <button
+                            className={`filter-btn ${activeFilter === 'Basketball' ? 'active' : ''}`}
+                            onClick={() => setActiveFilter('Basketball')}
+                        >
+                            Basketball
+                        </button>
+                        <button
+                            className={`filter-btn ${activeFilter === 'Baseball' ? 'active' : ''}`}
+                            onClick={() => setActiveFilter('Baseball')}
+                        >
+                            Baseball
+                        </button>
+                        <button
+                            className={`filter-btn ${activeFilter === 'High School' ? 'active' : ''}`}
+                            onClick={() => setActiveFilter('High School')}
+                        >
+                            High School
+                        </button>
+                        <button
+                            className={`filter-btn ${activeFilter === 'College' ? 'active' : ''}`}
+                            onClick={() => setActiveFilter('College')}
+                        >
+                            College
+                        </button>
                     </div>
+
+                    <div className="w-layout-grid latest-projects__grid">
+                        {filteredItems.map((item, index) => (
+                            <motion.img
+                                key={item.id}
+                                ref={index === 0 ? ref2 : index === 1 ? ref3 : index === 2 ? ref4 : ref5}
+                                src={item.image}
+                                loading="lazy"
+                                alt={item.title}
+                                initial={{ opacity: 0, y: 80 }}
+                                animate={{
+                                    opacity: index === 0 ? (inView2 ? 1 : 0) :
+                                             index === 1 ? (inView3 ? 1 : 0) :
+                                             index === 2 ? (inView4 ? 1 : 0) :
+                                             (inView5 ? 1 : 0),
+                                    y: index === 0 ? (inView2 ? 0 : 80) :
+                                       index === 1 ? (inView3 ? 0 : 80) :
+                                       index === 2 ? (inView4 ? 0 : 80) :
+                                       (inView5 ? 0 : 80)
+                                }}
+                                transition={{ duration: 0.55 }}
+                            />
+                        ))}
+                    </div>
+
                     <motion.div
                         ref={ref6}
-                        className="container__800 m-auto logo"
+                        className="portfolio-stats"
                         initial={{ opacity: 0, y: 80 }}
                         animate={{ opacity: inView6 ? 1 : 0, y: inView6 ? 0 : 80 }}
                         transition={{ duration: 0.55 }}
                     >
-                        <div className="recent-work__logos-title">Designs commonly featured by</div>
-                        <div className="recent-work__logos-flex">
-                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba463b27cf60b2c9a7554_dribbble-logo.svg" loading="lazy" alt="" className="recent-work__logo dribbble" />
-                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba4634c5ff90b59c1abdf_lapa-logo.svg" loading="lazy" alt="" className="recent-work__logo" />
-                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba46388adf7d226b3bd2e_awwwards-seeklogo.com.svg" loading="lazy" alt="" className="recent-work__logo awwwards" />
-                            <img src="https://assets.website-files.com/5837424ae11409586f837994/5e9ba4639aae7e3a14b5f282_product-hunt-logo-horizontal-black.svg" loading="lazy" alt="" className="recent-work__logo ph" />
+                        <div className="stat-item">
+                            <div className="stat-number">500+</div>
+                            <div className="stat-label">Coaches Placed</div>
+                        </div>
+                        <div className="stat-item">
+                            <div className="stat-number">92%</div>
+                            <div className="stat-label">Interview Rate</div>
+                        </div>
+                        <div className="stat-item">
+                            <div className="stat-number">3-5</div>
+                            <div className="stat-label">Days Delivery</div>
                         </div>
                     </motion.div>
                 </div>
