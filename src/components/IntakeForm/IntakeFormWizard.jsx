@@ -2,8 +2,21 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
 import PersonalInfo from './sections/PersonalInfo';
+import TargetPosition from './sections/TargetPosition';
+import CurrentPosition from './sections/CurrentPosition';
 import WorkHistory from './sections/WorkHistory';
 import Education from './sections/Education';
+import Certifications from './sections/Certifications';
+import CoachingPhilosophy from './sections/CoachingPhilosophy';
+import Achievements from './sections/Achievements';
+import Affiliations from './sections/Affiliations';
+import NotableAthletes from './sections/NotableAthletes';
+import Publications from './sections/Publications';
+import References from './sections/References';
+import AdditionalInfo from './sections/AdditionalInfo';
+import ResumePreferences from './sections/ResumePreferences';
+import FileUploads from './sections/FileUploads';
+import DeliveryPreferences from './sections/DeliveryPreferences';
 import ReviewSubmit from './sections/ReviewSubmit';
 
 const WizardStyle = styled.div`
@@ -166,8 +179,21 @@ const WizardStyle = styled.div`
 
 const sections = [
   { id: 'personal', title: 'Personal Information', component: PersonalInfo },
+  { id: 'target', title: 'Target Position', component: TargetPosition },
+  { id: 'current', title: 'Current Position', component: CurrentPosition },
   { id: 'work', title: 'Work History', component: WorkHistory },
   { id: 'education', title: 'Education', component: Education },
+  { id: 'certifications', title: 'Certifications', component: Certifications },
+  { id: 'philosophy', title: 'Coaching Philosophy', component: CoachingPhilosophy },
+  { id: 'achievements', title: 'Achievements', component: Achievements },
+  { id: 'affiliations', title: 'Affiliations', component: Affiliations },
+  { id: 'athletes', title: 'Notable Athletes', component: NotableAthletes },
+  { id: 'publications', title: 'Publications & Media', component: Publications },
+  { id: 'references', title: 'References', component: References },
+  { id: 'additional', title: 'Additional Information', component: AdditionalInfo },
+  { id: 'preferences', title: 'Resume Preferences', component: ResumePreferences },
+  { id: 'uploads', title: 'File Uploads', component: FileUploads },
+  { id: 'delivery', title: 'Delivery Preferences', component: DeliveryPreferences },
   { id: 'review', title: 'Review & Submit', component: ReviewSubmit },
 ];
 
@@ -175,6 +201,8 @@ const IntakeFormWizard = ({ selectedPackage }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState({});
   const [lastSaved, setLastSaved] = useState(null);
+
+  // Auto-save functionality
 
   // Auto-save functionality
   useEffect(() => {
@@ -214,22 +242,22 @@ const IntakeFormWizard = ({ selectedPackage }) => {
   };
 
   const handleSubmit = () => {
-    // Export JSON
-    const jsonData = {
-      orderDate: new Date().toISOString(),
-      packageSelected: selectedPackage,
-      ...formData,
-    };
+    // Export form data to structured JSON
+    const exportData = exportFormDataAsJSON(formData, selectedPackage);
 
-    const dataStr = JSON.stringify(jsonData, null, 2);
-    const dataBlob = new Blob([dataStr], { type: 'application/json' });
-    const url = URL.createObjectURL(dataBlob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `coaching-resume-order-${Date.now()}.json`;
-    link.click();
+    // Download the JSON file
+    downloadJSON(exportData);
 
-    alert('Form submitted successfully! Your data has been downloaded.');
+    // Clear localStorage after successful submission
+    localStorage.removeItem('intakeFormData');
+    localStorage.removeItem('intakeFormTimestamp');
+
+    alert(
+      `Order submitted successfully!\n\n` +
+      `Order ID: ${exportData.orderID}\n\n` +
+      `Your information has been downloaded as a JSON file. ` +
+      `You'll receive a confirmation email within 24 hours.`
+    );
   };
 
   const updateFormData = (section, data) => {

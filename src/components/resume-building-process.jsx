@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
 import { motion, useInView } from 'framer-motion';
+import { Clipboard, Stopwatch, CheckCircle, Trophy } from './svg/CoachingIcons';
 
 const ResumeBuildingProcessStyle = styled.div`
     padding: 150px 5% 100px;
@@ -78,23 +79,40 @@ const ResumeBuildingProcessStyle = styled.div`
         background-size: auto;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
+        color: var(--color-gold);
+    }
+
+    .step-number {
+        font-family: Grifter, sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--color-gold);
+        margin-bottom: 12px;
+    }
+
+    .step-title {
+        font-family: Grifter, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--color-navy);
+        margin-bottom: 12px;
     }
 
     .grid {
-        max-width: 1100px;
-        grid-column-gap: 60px;
-        grid-row-gap: 30px;
+        max-width: 1200px;
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
         grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-top: 80px;
         margin-left: auto;
         margin-right: auto;
-        font-size: 20px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .quote {
@@ -186,7 +204,7 @@ const ResumeBuildingProcessStyle = styled.div`
 
         .grid {
             grid-row-gap: 60px;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
             margin-top: 40px;
         }
 
@@ -261,15 +279,15 @@ const ResumeBuildingProcess = () => {
     return (
         <ResumeBuildingProcessStyle>
             <div className="container">
-                <motion.div 
+                <motion.div
                     ref={ref1}
                     className="container_800"
                     initial={{ opacity: 0, y: 80 }}
                     animate={{ opacity: inView1 ? 1 : 0, y: inView1 ? 0 : 80 }}
                     transition={{ duration: 0.55 }}
                 >
-                    <h2 className="max-600">We didn't reinvent the wheel, just design</h2>
-                    <p className="sub-para-24 max-600">Design as you know it is out the door. Design as you want it just arrived.</p>
+                    <h2 className="max-600">From Plan, to Podium!</h2>
+                    <p className="sub-para-24 max-600">Four simple steps to your championship resume</p>
                 </motion.div>
                 <motion.div
                     ref={ref2}
@@ -279,13 +297,36 @@ const ResumeBuildingProcess = () => {
                     transition={{ duration: 0.55 }}
                 >
                     <div className="div-block-19">
-                        <div>Subscribe to a plan & request as many designs as you'd like.</div>
+                        <div className="process_icon-block">
+                            <Clipboard size={70} />
+                        </div>
+                        <div className="step-number">01</div>
+                        <div className="step-title">Choose Package</div>
+                        <div>Select the plan that fits your goals and career level</div>
                     </div>
                     <div className="div-block-19">
-                        <div>Receive your design within a few business days on average, Monday to Friday.</div>
+                        <div className="process_icon-block">
+                            <Stopwatch size={70} />
+                        </div>
+                        <div className="step-number">02</div>
+                        <div className="step-title">Complete Intake</div>
+                        <div>Share your coaching story through our detailed form</div>
                     </div>
                     <div className="div-block-19">
-                        <div>We'll revise the designs until you're 100% satisfied.</div>
+                        <div className="process_icon-block">
+                            <CheckCircle size={70} />
+                        </div>
+                        <div className="step-number">03</div>
+                        <div className="step-title">Review Draft</div>
+                        <div>Collaborate on revisions until it's perfect</div>
+                    </div>
+                    <div className="div-block-19">
+                        <div className="process_icon-block">
+                            <Trophy size={70} />
+                        </div>
+                        <div className="step-number">04</div>
+                        <div className="step-title">Final Delivery</div>
+                        <div>Receive your championship-ready resume and land interviews</div>
                     </div>
                 </motion.div>
                 <motion.div 
@@ -297,8 +338,8 @@ const ResumeBuildingProcess = () => {
                 >
                     <div className="quote_wrapper">
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg" alt="" loading="lazy" className="m-b-30" />
-                        <div>Designjoy shows that they know the art of subtlety.</div>
-                        <img src="https://assets.website-files.com/5837424ae11409586f837994/6119d7e989cff23b39d11a86_webflow.svg" alt="" loading="lazy" className="m-t-30 webflow" />
+                        <div>Championship Resumes helped me land my dream position. The process was smooth and the final product exceeded expectations.</div>
+                        <div className="m-t-30" style={{ fontWeight: 700 }}>— Coach Williams, Head Football Coach</div>
                     </div>
                     <motion.img 
                         ref={ref4}
