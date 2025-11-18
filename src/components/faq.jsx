@@ -112,71 +112,71 @@ const Faq = () => {
                 <div data-w-id="c9b1f105-50eb-7aed-2e96-3ba9d79937c6" className="faq__list-wrapper">
                     <div data-w-id="c9b1f105-50eb-7aed-2e96-3ba9d79937c7" className="faq__row">
                         <div className="faq__left">
-                            <div className="faq__title">Why wouldn't I just hire a full-time designer?</div>
-                            <div className="faq__answer">Good question! For starters, the annual cost of a full-time senior-level designer now exceeds $100,000, plus benefits (and good luck finding one available). Aside from that, you may not always have enough work to keep them busy at all times, so you're stuck paying for time you aren't able to utilize. <br/> <br/> With the monthly plan, you can pause and resume your subscription as often as you need to ensure you're only paying your designer when you have work available for them.</div>
+                            <div className="faq__title">How long does the resume creation process take?</div>
+                            <div className="faq__answer">Most resumes are delivered within 3-5 business days for our standard packages. Championship Level clients receive their first draft in 3 days, and Elite Performance clients can opt for 24-hour rush delivery.</div>
                         </div>
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/615935589047f98085c90963_arrow-down-1%201.svg" loading="lazy" alt="" className="faq__arrow" />
                     </div>
                     <div data-w-id="5cd69e36-ecfd-3be9-3a25-5792a826acd6" className="faq__row">
                         <div className="faq__left">
-                            <div className="faq__title">Is there a limit to how many requests I&nbsp;can have?</div>
-                            <div className="faq__answer">Once subscribed, you're able to add as many design requests to your queue as you'd like, and they will be delivered one by one.</div>
+                            <div className="faq__title">What if I need revisions?</div>
+                            <div className="faq__answer">All packages include revisions! Varsity Level includes 1 round, Championship Level includes 2 rounds, and Elite Performance includes unlimited revisions. We work with you until you're 100% satisfied.</div>
                         </div>
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/615935589047f98085c90963_arrow-down-1%201.svg" loading="lazy" alt="" className="faq__arrow" />
                     </div>
                     <div data-w-id="c9b1f105-50eb-7aed-2e96-3ba9d79937ce" className="faq__row">
                         <div className="faq__left">
-                            <div className="faq__title">How fast will I receive my designs?</div>
-                            <div className="faq__answer">On average, most requests are completed in just two days or less. However, more complex requests can take longer.</div>
+                            <div className="faq__title">Do you work with coaches from all sports?</div>
+                            <div className="faq__answer">Absolutely! We've created resumes for football, basketball, baseball, soccer, lacrosse, volleyball, track & field, swimming, wrestling, and many other sports coaches. Our expertise spans all levels from high school to professional.</div>
                         </div>
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/615935589047f98085c90963_arrow-down-1%201.svg" loading="lazy" alt="" className="faq__arrow" />
                     </div>
                     <div data-w-id="c9b1f105-50eb-7aed-2e96-3ba9d79937d5" className="faq__row">
                         <div className="faq__left">
-                            <div className="faq__title">Who are the designers?</div>
-                            <div className="faq__answer">You might be surprised to hear this, but Designjoy is actually an agency of one. This means you'll work directly with me, founder of Designjoy. However, power-ups requests such as animations or custom illustrations are provided by partner designers.</div>
+                            <div className="faq__title">Are your resumes compatible with ATS (Applicant Tracking Systems)?</div>
+                            <div className="faq__answer">Yes! All our resumes are ATS-optimized, meaning they're formatted to pass through automated screening systems used by schools and athletic departments while still looking visually impressive to human reviewers.</div>
                         </div>
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/615935589047f98085c90963_arrow-down-1%201.svg" loading="lazy" alt="" className="faq__arrow" />
                     </div>
                     <div data-w-id="c9b1f105-50eb-7aed-2e96-3ba9d79937dc" className="faq__row">
                         <div className="faq__left">
-                            <div className="faq__title">How does the pause feature work?</div>
-                            <div className="faq__answer">We understand you may not have enough design work to fill up entire month. Perhaps you only have one or two design requests at the moment. That's where pausing your subscription comes in handy.<br/> <br/> Billing cycles are based on 31 day period. Let's say you sign up and use the service for 21 days, and then decide to pause your subscription. This means that the billing cycle will be paused and you'll have 10 days of service remaining to be used anytime in the future.</div>
+                            <div className="faq__title">What information do I need to provide?</div>
+                            <div className="faq__answer">You'll complete our comprehensive intake form covering your coaching experience, education, certifications, achievements, and coaching philosophy. The form is designed to be thorough but easy to complete, typically taking 30-45 minutes.</div>
                         </div>
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/615935589047f98085c90963_arrow-down-1%201.svg" loading="lazy" alt="" className="faq__arrow" />
                     </div>
                     <div data-w-id="1a81008d-0f15-30c3-8f4a-f33513fea544" className="faq__row">
                         <div className="faq__left">
-                            <div className="faq__title">What programs do you design in?</div>
-                            <div className="faq__answer">Most requests are designed using Figma.</div>
+                            <div className="faq__title">Can you help with cover letters and LinkedIn profiles?</div>
+                            <div className="faq__answer">Yes! Our Championship and Elite packages include cover letter templates and LinkedIn optimization. We can also provide interview coaching as an add-on service.</div>
                         </div>
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/615935589047f98085c90963_arrow-down-1%201.svg" loading="lazy" alt="" className="faq__arrow" />
                     </div>
                     <div data-w-id="c9b1f105-50eb-7aed-2e96-3ba9d79937e3" className="faq__row">
                         <div className="faq__left">
-                            <div className="faq__title">How do I request designs?</div>
-                            <div className="faq__answer">Designjoy offers a ton of flexibility in how you request designs using Trello. Some common ways clients request designs is directly via Trello, sharing Google docs or wireframes, or even recording a brief Loom video (for those who prefer not to write their briefs out). Basically, if it can be linked to or shared in Trello, it's fair game.</div>
+                            <div className="faq__title">What if I'm not satisfied with the final product?</div>
+                            <div className="faq__answer">Your satisfaction is our priority. If you're not happy with your resume after all included revisions, we offer a 100% money-back guarantee within 14 days of final delivery.</div>
                         </div>
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/615935589047f98085c90963_arrow-down-1%201.svg" loading="lazy" alt="" className="faq__arrow" />
                     </div>
                     <div data-w-id="c9b1f105-50eb-7aed-2e96-3ba9d79937ea" className="faq__row">
                         <div className="faq__left">
-                            <div className="faq__title">What if I don't like the design?</div>
-                            <div className="faq__answer">No worries! We'll continue to revise the design until you're 100% satisfied.</div>
+                            <div className="faq__title">Do you provide examples or samples?</div>
+                            <div className="faq__answer">Yes! Check out our Portfolio page to see anonymized samples of our work across different sports and coaching levels. You can also download a free template sample by contacting us.</div>
                         </div>
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/615935589047f98085c90963_arrow-down-1%201.svg" loading="lazy" alt="" className="faq__arrow" />
                     </div>
                     <div data-w-id="c9b1f105-50eb-7aed-2e96-3ba9d79937f1" className="faq__row">
                         <div className="faq__left">
-                            <div className="faq__title">What if I&nbsp;only have a single request?</div>
-                            <div className="faq__answer">That's fine. You can pause your subscription when finished and return &nbsp;when you have additional design needs. There's no need to let the remainder of your subscription go to waste.</div>
+                            <div className="faq__title">Can I make changes to my resume after it's delivered?</div>
+                            <div className="faq__answer">Absolutely! You'll receive your resume in both PDF (for submissions) and editable Word format (for future updates). We also offer annual update packages at a discounted rate.</div>
                         </div>
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/615935589047f98085c90963_arrow-down-1%201.svg" loading="lazy" alt="" className="faq__arrow" />
                     </div>
                     <div data-w-id="c9b1f105-50eb-7aed-2e96-3ba9d79937f8" className="faq__row">
                         <div className="faq__left">
-                            <div className="faq__title">Are there any refunds if I don't like the service?</div>
-                            <div className="faq__answer">Due to the high quality nature of the work, there will be no refunds issued.</div>
+                            <div className="faq__title">What payment methods do you accept?</div>
+                            <div className="faq__answer">We accept all major credit cards, debit cards, and PayPal. Payment is required upfront before we begin work on your resume.</div>
                         </div>
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/615935589047f98085c90963_arrow-down-1%201.svg" loading="lazy" alt="" className="faq__arrow" />
                     </div>

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
+import { Whistle, Trophy, Football } from './svg/CoachingIcons';
 
 
 const HeroStyle = styled.div`
@@ -206,17 +207,17 @@ const SportfolioHero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.55 }}
                 >
-                    <h1>Unlock a picture perfect resume</h1>
-                    <p className="sub-para-24">Coaching portfolio subscriptions to advance your career.</p>
+                    <h1>Ordinary resumes are benched.<br/>Game-changing portfolios are now in play.</h1>
+                    <p className="sub-para-24">Professional resumes for coaches who refuse to settle for average.<br/>Fast turnaround. Championship results.</p>
                     <div className="button_group">
-                        <a className="button" href="/">
+                        <a className="button" href="#packages">
                             <div>
-                                See plans
+                                View packages
                             </div>
                         </a>
                     </div>
                     <div className="guarantee">
-                        <div>Designs you'll</div>
+                        <div>Championship-ready resumes you'll</div>
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/61195da63e9b07d94bbaa046_heart.svg" loading="lazy" alt="" className="guarantee_heart" />
                         <div>, guaranteed</div>
                     </div>
