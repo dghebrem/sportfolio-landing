@@ -278,8 +278,11 @@ const PerksOne = () => {
                     animate={{ opacity: inView1 ? 1 : 0, y: inView1 ? 0 : 80 }}
                     transition={{ duration: 0.55 }}
                 >
-                    <h2 className="max-600">It’s “you’ll <span className="never">never</span> go back” better</h2>
-                    <p className="sub-para-24 max-6700">Designjoy replaces unreliable freelancers and expensive agencies for one flat monthly fee, with designs delivered so fast that it will blow your mind.</p>
+                    <h2 className="max-600">More Than a Resume.<br/>A Career <span className="never">Game Plan</span></h2>
+                    <p className="sub-para-24 max-6700">
+                        Championship Resumes replaces generic resume templates and overpriced career coaches
+                        with a streamlined process that gets results—fast.
+                    </p>
                 </motion.div>
                 <div className="w-layout-grid feature-quote__grid">
                     <motion.div
@@ -290,10 +293,10 @@ const PerksOne = () => {
                         transition={{ duration: 0.55 }}
                     >
                         <img src="https://assets.website-files.com/5837424ae11409586f837994/6119d7a83723f6d0114590ab_quotation.svg" loading="lazy" alt="" className="m-b-30" />
-                        <div>Design is everything, and these guys have nailed it.</div>
+                        <div>The resume they created helped me land my dream position. Worth every penny.</div>
                         <div className="author-wrapper">
-                            <div className="author-avatar"></div>
-                            <div className="feature-quote__quote-author">Kevin O'Leary, <span className="text-span">🦈 <strong>Shark Tank</strong></span></div>
+                            <div className="author-avatar" style={{backgroundImage: 'url(https://assets.website-files.com/5837424ae11409586f837994/6126a045ae4708114a9f6320_5fb3e6aa7b258c2dfe0928dc.jpeg)'}}></div>
+                            <div className="feature-quote__quote-author">Mike Thompson, <span className="text-span">🏈 <strong>Head Football Coach</strong></span></div>
                         </div>
                     </motion.div>
                     <div className="feature-quote__feature-block">
@@ -304,8 +307,8 @@ const PerksOne = () => {
                             animate={{ opacity: inView3 ? 1 : 0, y: inView3 ? 0 : 80 }}
                             transition={{ duration: 0.55 }}
                         >
-                            <div className="feature-quote__feature-title m-b-10">Totally async</div>
-                            <div className="feature-quote__description">Don't like meetings?&nbsp;We don't either; so much so that we've outlawed them completely.</div>
+                            <div className="feature-quote__feature-title m-b-10">Simple Online Process</div>
+                            <div className="feature-quote__description">Complete our comprehensive intake form at your own pace. No scheduling calls or back-and-forth emails required.</div>
                         </motion.div>
                         <motion.div
                             ref={ref4}
@@ -314,8 +317,8 @@ const PerksOne = () => {
                             animate={{ opacity: inView4 ? 1 : 0, y: inView4 ? 0 : 80 }}
                             transition={{ duration: 0.55 }}
                         >
-                            <div className="feature-quote__feature-title m-b-10">Manage with Trello</div>
-                            <div className="feature-quote__description">Manage your design board using Trello. View active, queued and completed tasks with ease.</div>
+                            <div className="feature-quote__feature-title m-b-10">Auto-Save Feature</div>
+                            <div className="feature-quote__description">Never lose your progress. Our intake form automatically saves every 30 seconds as you work.</div>
                         </motion.div>
                         <motion.div
                             ref={ref5}
@@ -324,8 +327,8 @@ const PerksOne = () => {
                             animate={{ opacity: inView5 ? 1 : 0, y: inView5 ? 0 : 80 }}
                             transition={{ duration: 0.55 }}
                         >
-                            <div className="feature-quote__feature-title m-b-10">Invite unlimited team members</div>
-                            <div className="feature-quote__description">Invite your entire team, so anyone can submit requests and track their progress.</div>
+                            <div className="feature-quote__feature-title m-b-10">Multiple Format Delivery</div>
+                            <div className="feature-quote__description">Receive your resume in PDF, Word, and Google Docs formats—ready to use wherever you apply.</div>
                         </motion.div>
                     </div>
                 </div>

@@ -150,7 +150,7 @@ const ResumeSections = () => {
                     animate={{ opacity: inView1 ? 1 : 0, y: inView1 ? 0 : 80 }}
                     transition={{ duration: 0.55 }}
                 >
-                    Apps, websites, logos &amp; more.
+                    Every sport. Every level. Every section covered.
                 </motion.h2>
                 <motion.div 
                     ref={ref2}
@@ -163,80 +163,80 @@ const ResumeSections = () => {
                     <div class="w-layout-grid scope__grid">
                         <div id="w-node-a476bea0-4d4e-9005-ee25-f88a19146459-1bf5e5de" class="scope__col">
                             <div class="scope__item">
-                                <div>Websites</div>
+                                <div>Football</div>
                             </div>
                             <div class="scope__item">
-                                <div>Mobile apps</div>
+                                <div>Basketball</div>
                             </div>
                             <div class="scope__item">
-                                <div>Logos &amp; branding</div>
+                                <div>Baseball</div>
                             </div>
                             <div class="scope__item">
-                                <div>Design systems</div>
+                                <div>Softball</div>
                             </div>
                             <div class="scope__item">
-                                <div>SAAS</div>
+                                <div>Soccer</div>
                             </div>
                             <div class="scope__item">
-                                <div>Wireframes</div>
+                                <div>Track & Field</div>
                             </div>
                             <div class="scope__item">
-                                <div>Stationery</div>
+                                <div>Volleyball</div>
                             </div>
                             <div class="scope__item">
-                                <div>Pitch decks</div>
-                            </div>
-                        </div>
-                        <div class="scope__col">
-                            <div class="scope__item">
-                                <div>Slide decks</div>
-                            </div>
-                            <div class="scope__item">
-                                <div>Direct mail</div>
-                            </div>
-                            <div class="scope__item">
-                                <div>Infographics</div>
-                            </div>
-                            <div class="scope__item">
-                                <div>Brochures</div>
-                            </div>
-                            <div class="scope__item">
-                                <div>Signage</div>
-                            </div>
-                            <div class="scope__item">
-                                <div>Brand guides</div>
-                            </div>
-                            <div class="scope__item">
-                                <div>Social media graphics</div>
-                            </div>
-                            <div class="scope__item">
-                                <div>Billboards</div>
+                                <div>Wrestling</div>
                             </div>
                         </div>
                         <div class="scope__col">
                             <div class="scope__item">
-                                <div>Trade show banners</div>
+                                <div>Swimming & Diving</div>
                             </div>
                             <div class="scope__item">
-                                <div>Email graphics</div>
+                                <div>Lacrosse</div>
                             </div>
                             <div class="scope__item">
-                                <div>Resumes</div>
+                                <div>Tennis</div>
                             </div>
                             <div class="scope__item">
-                                <div>Business cards</div>
+                                <div>Golf</div>
                             </div>
                             <div class="scope__item">
-                                <div>Packaging</div>
+                                <div>Cross Country</div>
                             </div>
                             <div class="scope__item">
-                                <div>Blog graphics</div>
+                                <div>Strength & Conditioning</div>
                             </div>
                             <div class="scope__item">
-                                <div>Digital ads</div>
+                                <div>Athletic Director</div>
                             </div>
                             <div class="scope__item">
-                                <div>Icons</div>
+                                <div>Youth Sports</div>
+                            </div>
+                        </div>
+                        <div class="scope__col">
+                            <div class="scope__item">
+                                <div>High School</div>
+                            </div>
+                            <div class="scope__item">
+                                <div>College (NCAA D1-D3)</div>
+                            </div>
+                            <div class="scope__item">
+                                <div>JUCO</div>
+                            </div>
+                            <div class="scope__item">
+                                <div>NAIA</div>
+                            </div>
+                            <div class="scope__item">
+                                <div>Professional</div>
+                            </div>
+                            <div class="scope__item">
+                                <div>Cover Letters</div>
+                            </div>
+                            <div class="scope__item">
+                                <div>Coaching Philosophy</div>
+                            </div>
+                            <div class="scope__item">
+                                <div>LinkedIn Optimization</div>
                             </div>
                         </div>
                     </div>
